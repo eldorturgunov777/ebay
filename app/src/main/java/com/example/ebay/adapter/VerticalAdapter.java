@@ -52,7 +52,7 @@ public class VerticalAdapter extends RecyclerView.Adapter<VerticalAdapter.Vertic
         return list.size();
     }
 
-    public static class VerticalViewHolder extends RecyclerView.ViewHolder {
+        public static class VerticalViewHolder extends RecyclerView.ViewHolder {
         ImageView imageView;
         TextView title;
 
