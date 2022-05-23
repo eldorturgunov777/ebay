@@ -105,7 +105,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="15dp"
                     android:layout_marginStart="10dp"
-                    android:layout_marginEnd="9dp"
+                    android:layout_marginEnd="10dp"
                     android:text="Brave the cold with winter essentials"
                     android:textColor="@color/white"
                     android:textSize="26sp"
@@ -115,25 +115,16 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:padding="10dp">
 
-                <GridView
-                    android:id="@+id/gridview"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:horizontalSpacing="16dp"
-                    android:numColumns="2"
-                    android:stretchMode="columnWidth"
-                    android:verticalSpacing="16dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewVertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
